@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <TextView
+        android:id="@+id/verifyMsg"
+        android:layout_width="175dp"
+        android:layout_height="99dp"
+        android:layout_above="@id/Profile"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="387dp"
+        android:text="Email Not Verfied !"
+        android:visibility="gone"
+        android:textColor="#C2185B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="Verify Now"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyMsg" />
+
+    <ImageView
+        android:id="@+id/imageView_profile_dp"
+        android:layout_width="120dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/profile"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/QRpage"
+        android:layout_width="309dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Qr code"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/History"
+        android:layout_width="307dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/QRpage"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Parking Status"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Profile"
+        android:layout_width="313dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/History"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Logout"
+        android:layout_width="119dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/Profile"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="Logout"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="565dp" />
+</RelativeLayout>
